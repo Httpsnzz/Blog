@@ -1,0 +1,267 @@
+body{
+ padding: 0px auto;
+ margin: 0%;
+}
+
+header{ 
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px 20px;
+ margin: 0px auto;
+ background-color:blue;
+ height: 100%;
+}
+
+.logo {
+ width: 150px;
+ height:auto;
+ 
+ 
+}
+.pesquisa {
+    display: flex;
+    margin-left: 225px;
+    flex-grow: 1;
+    
+  
+   
+}
+.pesquisa input{
+    padding:0px, auto;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 620px;
+    height: 50px;
+}
+.menu nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a{
+color:white;
+padding: 8px 25px;
+font-family: sans-serif;
+text-decoration: none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* BANNERS:*/
+.banner-carrossel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    display:flex;    
+}
+
+.banner {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TENTATIVA 374617893738271834 DE FZR SLIDES*/
+
+@keyframes slide {
+    0% {transform:translateX(0);}
+    33% {transform:translateX(-100%);}
+    66% {transform: translateX(-200%);}
+    100% {transform: translateX(0);}
+}
+
+
+
+.banner{
+    animation: slide 10s infinite;
+}
+
+h1{
+font-family: sans-serif;
+font-size: 80px;
+text-align: center;
+color: blue;
+
+font-weight: 900;
+
+}
+
+
+/* DESISTI DE ARRUMAR OS BANNERS, POSTS:*/
+
+.secoes{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+
+}
+    /* primeira seção de posts*/
+
+    .postagens {
+    display: grid; 
+    grid-template-columns: repeat(2,1fr); 
+    gap:50px; 
+    padding: 20px;
+    width: 100%px;
+    background-color: rgb(255, 255, 255);
+}
+    
+    /* segunda seção de posts*/
+
+.postagens2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:50px;
+    background-color: rgb(255, 255, 255);
+    padding:20px;
+    width: 100%px;
+  
+    
+}
+.post2 {
+    align-items: center;
+    justify-content: space-between;
+    background-color:#e7f4ff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    
+    
+}
+
+.post {
+        background-color: #e7f4ff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.conteudo-post {
+        display: flex; 
+        padding: 15px;
+        
+}
+
+.post img {
+        width: 150px;
+        height: 150px;
+        border-radius: 4px;
+        margin-right: 15px;
+}
+
+.texto-post {
+        flex-grow: 1;
+}
+
+.texto-post h2{
+        margin-top: 0%;
+        font-size: 20px;
+}
+
+.texto-post p {
+        font-size: 16x;
+        color: #555
+}
+
+.texto-post a  {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration:none;
+        color: #007bff; 
+        font-weight: bold;
+}
+
+.texto-post a:hover, .texto-post2 a:hover {
+        text-decoration: underline;
+}
+    
+.texto-post2 h2 {
+text-align:left;
+font-size: 24px;
+margin-bottom: 15px;
+font-family: sans-serif;
+}
+
+.post2 img {
+    width:400px;
+    height:250px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.texto-post2 p {
+    text-align: justify;
+    font-size: 18px;
+    color: #555;
+} 
+
+.texto-post2 a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.conteudo-post2{
+   
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 15px;
+    height: auto; 
+    
+}
+
+/* rodape q tinha esquecido*/
+
+footer {
+    background-color:blue;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline; 
+    margin-right: 20px;
+}
+
+footer nav ul li a {
+    color: white;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+    }
+footer p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pcontatos{
+    font-family: sans-serif;
+}
